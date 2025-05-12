@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Focus</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header">
+      <h1>Pomodoro Focus</h1>
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Pomodoro Timer -->
+    <main class="container">
+      <!-- Timer Box -->
+      <div class="timer-box">
+        <h2 id="sessionType">Work Session</h2>
+        <div id="timer" class="timer">25:00</div>
+        <div class="controls">
+          <button id="startPauseBtn">Start</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+      <!-- Focused Time Summary -->
+      <div class="summary">
+        <p>You've been focused for:</p>
+        <p>Today: 1 session</p>
+      </div>
+
+      <!-- Task Section -->
+      <section class="task-section">
+        <div class="task-input">
+          <button id="addTaskBtn">+</button>
+          <input type="text" id="taskInput" placeholder="Add a new task..." />
+        </div>
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Inspired by the Pomodoro Technique® — A productivity method developed by Francesco Cirillo.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9911996482945108"
+     crossorigin="anonymous"></script>
+</body>
+</html>
